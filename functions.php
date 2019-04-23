@@ -307,6 +307,13 @@ else {
                 require_once( get_template_directory() . '/dt-people-groups/people-groups-endpoints.php' ); // builds rest endpoints
                 $this->endpoints['peoplegroups'] = Disciple_Tools_People_Groups_Endpoints::instance();
             }
+
+            /**
+             * Clusters
+             */
+            require_once( get_template_directory() . '/dt-clusters/clusters-post-type.php' );
+            Disciple_Tools_Clusters_Post_Type::instance();
+
             /**
              * dt-metrics
              */

@@ -142,7 +142,8 @@ function dt_get_option( string $name ) {
         case 'dt_custom_tiles':
             return get_option( 'dt_custom_tiles', [
                 "contacts" => [],
-                "groups" => []
+                "groups" => [],
+                "clusters" => []
             ]);
         case 'dt_custom_channels':
             return get_option( 'dt_custom_channels', [] );

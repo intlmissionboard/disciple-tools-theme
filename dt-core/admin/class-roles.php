@@ -23,7 +23,7 @@ class Disciple_Tools_Roles
      *
      * @var int
      */
-    private static $target_roles_version_number = 14;
+    private static $target_roles_version_number = 15;
 
     /**
      * The single instance of Disciple_Tools_Roles
@@ -365,6 +365,15 @@ class Disciple_Tools_Roles
             $role->add_cap( 'assign_any_groups' );
             $role->add_cap( 'update_any_groups' );
             $role->add_cap( 'delete_any_groups' );
+
+            $role->add_cap( 'access_clusters' );
+            $role->add_cap( 'create_clusters' );
+            $role->add_cap( 'update_clusters' );
+            $role->add_cap( 'update_shared_clusters' );
+            $role->add_cap( 'view_any_clusters' );
+            $role->add_cap( 'assign_any_clusters' );
+            $role->add_cap( 'update_any_clusters' );
+            $role->add_cap( 'delete_any_clusters' );
 
             /* Add WP-Admin caps for groups */
             $role->add_cap( 'edit_group' );
