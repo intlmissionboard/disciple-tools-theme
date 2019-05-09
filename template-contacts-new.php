@@ -9,6 +9,8 @@ get_header();
 
 ( function() { ?>
 
+<?php get_template_part( 'dt-assets/parts/modals/modal', 'new-location' ); ?>
+
 <div id="content">
     <div id="inner-content" class="grid-x grid-margin-x">
         <div class="large-2 medium-12 small-12 cell"></div>
@@ -54,6 +56,11 @@ get_header();
                                                name="locations[query]" placeholder="<?php esc_html_e( "Search Locations", 'disciple_tools' ) ?>"
                                                autocomplete="off">
                                     </span>
+                                    <span class="typeahead__button">
+                                        <button type="button" data-open="create-location-modal" class="create-new-group typeahead__image_button input-height">
+                                            <img src="<?php echo esc_html( get_template_directory_uri() . '/dt-assets/images/add-group.svg' ) ?>"/>
+                                        </button>
+                                   </span>
                             </div>
                         </div>
                     </div>
